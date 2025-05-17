@@ -1,0 +1,286 @@
+html{scroll-behavior: smooth;}
+
+.montserrat {
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+.block-selection {
+  cursor: default;
+  user-select: none;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gradient {
+  background: linear-gradient(to right, #1E5945 25%, #F0FFF0 50%, #1E5945 75%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo {
+  font-family: Montserrat;
+  font-size: 28px !important;
+  font-weight: 600;
+  padding-right: 20px;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+     overflow-y: scroll;
+    height: 100vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+.body {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(18, 18, 20)), url("/images/VALHALLA_BG.png?v4"), rgb(18, 18, 20);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.nav-link {
+  color: rgba(255,255,255,.7);
+}
+
+.navbar-icon {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.heading {
+  margin-top: 30vh;
+  font-size: 8.5vmin;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+.custom-button {
+  display: flex !important;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background: transparent;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-radius: 15px !important;
+  color: white !important;
+  font-family: Montserrat;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  width: 250px;
+}
+
+
+.custom-input {
+   background: hsl(213deg 20% 15%);
+    box-shadow: 0 0 2em hsl(231deg 50% 15%);
+    padding: 0.5em; 
+    padding: 0.5em 1em;
+    box-sizing: border-box;
+    border-color: #F0FFF0;
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5em; 
+    border-radius: 20px; 
+    color: hsl(0deg 0% 90%); 
+    margin-top: -1.5em; 
+}
+
+.custom-input:focus{
+  outline: none;
+  border-color: #F0FFF0;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-radius: 10px !important;
+}
+
+.close {
+  color: white !important;
+}
+
+.mini-button {
+  width: 30%;
+  font-size: 15px !important;
+}
+
+.buy-color:hover {
+  background: #0e188a;
+}
+
+
+.first-color:hover {
+  background: #1E5945;
+}
+
+.close-color:hover {
+  background: #DC143C;
+}
+
+.second-color:hover {
+  background: #F0FFF0;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.products {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(55, 57, 57) !important;
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(55, 57, 57) !important; 
+}
+
+.modal-content {
+  background-color: rgba(35, 37, 37) !important;
+  border-radius: 15px !important;
+  color: white;
+}
+
+.products-sub {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.adv-cards {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+@media (max-width: 750px) {
+  .adv-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .adv-card:first-child {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+.home-navbar {
+   background-color: rgb(27, 27, 30);
+}
+}
+
+.adv-card, .product {
+  background-color: rgb(27, 27, 30);
+  color: white;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.adv-card-title {
+  font-weight: 500;
+}
+
+.adv-card-desc {
+  font-weight: 400;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  text-align: end;
+  width: 100%;
+  gap: 5px;
+}
+
+.footer {
+  background-color: rgb(25, 25, 25);
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  font-family: Montserrat;
+  color: gray;
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.footer a {
+  color: gray !important;
+  text-decoration: none !important;
+}
